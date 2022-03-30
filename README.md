@@ -9,8 +9,8 @@ We are assisiting Steve who is helping is parent make smarter and more informaed
 ## Results
 In this assignment we were able to successfully refactor the code to run more efficiently. For 2017, the factoring successfully cut down the code run time to .140625 seconds and for 2018 I was able to cut it down to .109375 seconds.
 
-![ScreenShot](https://github.com/Cayswartz/kickstarter-analysis/blob/fc2b534af013cc26b314f09955698c20f17f0480/Resources/Theater_Outcomes_vs_Launch.png)
-![ScreenShot](https://github.com/Cayswartz/kickstarter-analysis/blob/fc2b534af013cc26b314f09955698c20f17f0480/Resources/Theater_Outcomes_vs_Launch.png)
+![ScreenShot](https://github.com/Cayswartz/stocks-analysis/blob/61b111cdb46a3efc75e22397809aaaf321a51151/Resources/VBA_Challenge_2017.png)
+![ScreenShot]https://github.com/Cayswartz/stocks-analysis/blob/61b111cdb46a3efc75e22397809aaaf321a51151/Resources/VBA_Challenge_2018.png)
 
 I was able to obtain this goal through an overall reduction of loops in the coding. First, instead of nesting the j loop within the i loop we were able to create two unique and individual loops. First we created the i loop to initialize the ticker volume to 0 and then moved on to the j loop which ran through and identified the starting and ending prices. At the end of the j loop we also manually increase the tickerIndex with the below code: 
 
