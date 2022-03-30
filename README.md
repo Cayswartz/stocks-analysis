@@ -18,7 +18,7 @@ I was able to obtain this goal through a reduction of nested loops in the coding
 tickerIndex = tickerIndex + 1
 End If
 
-This code allowed for us to automate the increase of a ticker index without having to create an additional loop to move the tickerindex through the line. 
+This code allowed for us to automate the increase of a ticker index without having to create an additional nested loop to move the tickerindex through the line. 
 
 Ultimately, this refactoring allowed us to create three individual loops without any nesting which created efficiencies across the code. 
             
