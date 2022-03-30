@@ -12,13 +12,13 @@ In this assignment we were able to successfully refactor the code to run more ef
 ![ScreenShot](https://github.com/Cayswartz/stocks-analysis/blob/61b111cdb46a3efc75e22397809aaaf321a51151/Resources/VBA_Challenge_2017.png)
 ![ScreenShot](https://github.com/Cayswartz/stocks-analysis/blob/61b111cdb46a3efc75e22397809aaaf321a51151/Resources/VBA_Challenge_2018.png)
 
-I was able to obtain this goal through a reduction of nested loops in the coding. First, instead of nesting the j loop within the i loop I was able to create two unique and individual loops. I created the i loop to initialize the ticker volume to 0 and then moved on to the j loop which ran through and identified the starting and ending prices. At the end of the j loop I placed an equation to increase the tickerIndex with the below code:
+I was able to obtain this goal through a reduction of nested loops in the coding. First, instead of nesting the j loop within the i loop I was able to create three unique and individual loops. I created the i loop to initialize the ticker volume to 0 and then moved on to the j loop which ran through and identified the starting and ending prices. At the end of the j loop I placed an equation to increase the tickerIndex with the below code:
 
  If Cells(j + 1, 1).Value <> tickers(tickerIndex) Then
 tickerIndex = tickerIndex + 1
 End If
 
-This code allowed for us to automate the increase of a ticker index without having to create an additional nested loop to move the tickerindex through the line. 
+This code allowed for us to automate the increase of a ticker index without having to create an additional nested loop to move the tickerindex through the line. In the last loop, we produced the stored information as an output in the document.
 
 Ultimately, this refactoring allowed us to create three individual loops without any nesting which created efficiencies across the code. 
             
