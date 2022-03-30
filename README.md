@@ -1,14 +1,28 @@
 # stocks-analysis
 
 
-# VBA
+# Stock Analaysis with VBA
 
 ## Overview of Project
 We are assisiting Steve who is helping is parent make smarter and more informaed decisions on how to invest. Steve parent's are passionate about green energy and would like to invest green energy solutions such as hydro, geothermal, bio, wind and more! However, Steve's parents at the moment have decided to just invest in DAQO New Energy Corp, or DQ, because that is where they first met at a Dairy Queen. Steve is taking a closer look at the DQ stock but also would like his parents to diversify their stocks. In order to assit them in diversifying their stock he has pulled together information on other green energy options. 
 
 ## Results
+In this assignment we were able to successfully refactor the code to run more efficiently. For 2017, the factoring successfully cut down the code run time to .140625 seconds and for 2018 I was able to cut it down to .109375 seconds.
 
+![ScreenShot](https://github.com/Cayswartz/kickstarter-analysis/blob/fc2b534af013cc26b314f09955698c20f17f0480/Resources/Theater_Outcomes_vs_Launch.png)
+![ScreenShot](https://github.com/Cayswartz/kickstarter-analysis/blob/fc2b534af013cc26b314f09955698c20f17f0480/Resources/Theater_Outcomes_vs_Launch.png)
 
+I was able to obtain this goal through an overall reduction of loops in the coding. First, instead of nesting the j loop within the i loop we were able to create two unique and individual loops. First we created the i loop to initialize the ticker volume to 0 and then moved on to the j loop which ran through and identified the starting and ending prices. At the end of the j loop we also manually increase the tickerIndex with the below code: 
+
+ If Cells(j + 1, 1).Value <> tickers(tickerIndex) Then
+tickerIndex = tickerIndex + 1
+End If
+
+This code allowed for us to automate the increase of a ticker index without having to create an additional loop to move the tickerindex through the line. 
+
+Ultimatley, this refactoring allowed us to create three individual loops without any nesting which created efficiencies across the code. 
+            
+            
 
 ## Summary 
 
